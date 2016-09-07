@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.jack.progress"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/roundProgressBar_layout"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/yiqishouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:text="预期年化收益"
+            android:textColor="#90a2ad"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="106dp"
+            android:layout_height="1dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:background="#d1d4d6" />
+
+        <TextView
+            android:id="@+id/yuefen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:text="3个月"
+            android:textColor="#6d7a87"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/img_buttom_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/roundProgressBar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sy_xinrenzhuanxiang" >
+
+            <TextView
+                android:id="@+id/tex_buttom_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="新人专享"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <com.jack.progress.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android_custom:textColor="#9A32CD"
+            android_custom:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
